@@ -2,6 +2,7 @@ import React from 'react'
 import { getFeaturedEvents } from '../helper/api-util';
 import EventList from '../components/events/event-list';
 import Head from 'next/head';
+import NewsletterRegistration from '../components/input/newsletter-regristation';
 
 function HomePage(props) {
 
@@ -16,6 +17,7 @@ function HomePage(props) {
             content='find lot event in next'
           />
         </Head>
+        <NewsletterRegistration />
         <EventList items={featureEvents} />
     </div>
   )

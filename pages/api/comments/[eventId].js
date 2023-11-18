@@ -7,7 +7,7 @@ async function handler(req, res){
     const client = await MongoClient.connect('mongodb+srv://zaki:zaki123@cluster0.jvzl4pa.mongodb.net/')
 
     if(req.method == 'POST'){
-        const id = new Date().toISOString()
+
         const {name, email, comment} = req.body
         
         if(!comment || !email || !name){
